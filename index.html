@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Wiejskie Podwórze</title>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Obsługa kliknięcia na linki nawigacyjne
+            document.querySelectorAll('nav a').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+
+                    const targetSectionId = this.getAttribute('href').substring(1);
+                    const targetSection = document.getElementById(targetSectionId);
+
+                    // Przewijanie do sekcji z uwzględnieniem marginesu
+                    window.scrollTo({
+                        top: targetSection.offsetTop - 60, // Dodano 20 pikseli (10 + 20)
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Wiejskie Podwórze</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">O nas</a></li>
+            <li><a href="#lokalizacja">Lokalizacja</a></li>
+            <li><a href="#pricing">Oferta</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+            <li><a href="#fotos">Zdjęcia</a></li>
+        </ul>
+    </nav>
+
+    <h2>O nas</h2>
+    
+    <section id="about">
+        <p>Wyrusz w niezapomnianą podróż do krainy zieleni, ciszy i spokoju. Wiejskie Podwórze to miejsce, gdzie natura i spokój spotykają się, aby stworzyć idealne środowisko na relaks i odprężenie.</p>
+        <p>Nasz pensjonat oferuje wyjątkową atmosferę wiejskiego życia, z dala od zgiełku miasta. Oferujemy komfortowe pokoje i domki, gdzie możesz wypocząć i cieszyć się pięknymi widokami otaczającej przyrody.</p>
+        <p>Przyjdź i doświadcz magicznego uroku Wiejskiego Podwórza. Odkryj piękno przyrody, delektuj się świeżym powietrzem i odpocznij od codziennego chaosu.</p>
+        <p>Nasza przyjazna obsługa zawsze jest gotowa zapewnić Ci niezapomniane wrażenia. Zarezerwuj już dziś i dołącz do naszej społeczności relaksu!</p>
+    </section>
+
+    <h2>Lokalizacja</h2>
+
+    <section id="lokalizacja">
+        <p>Nasze Wiejskie Podwórze znajduje się w malowniczej okolicy, z dala od miejskiego zgiełku. Położone w sercu przyrody, nasze miejsce oferuje unikalne doświadczenia związane z wiejskim życiem.</p>
+        <p>W okolicy znajdziesz malownicze szlaki turystyczne, gdzie możesz spacerować i cieszyć się świeżym powietrzem. Nasza lokalizacja zapewnia także łatwy dostęp do atrakcji turystycznych i historycznych.</p>
+        <p>Odkryj uroki naszej lokalizacji i zanurz się w spokoju Wiejskiego Podwórza. Z dala od hałaśliwego świata, nasze miejsce to oaza spokoju dla każdego, kto szuka chwili wytchnienia.</p>
+        <p>Zapraszamy Cię do odwiedzenia naszego Wiejskiego Podwórza i doświadczenia harmonii z naturą!</p>
+    </section>
+
+    <h2>Oferta</h2>
+
+    <section id="pricing">
+        <p>W naszej ofercie znajdują się:</p>
+        <ul>
+            <li>Domek rodzinny 6 os</li>
+            <li>Pokój 4os</li>
+            <li>Pokój 3os</li>
+            <li>Pokój 2os</li>
+            <li>Pokój 2os</li>
+        </ul>
+    </section>
+
+    <h2>Kontakt</h2>
+
+    <section id="contact">
+        <p>Aby dowiedzieć się więcej, skontaktuj się z nami pod adresem: <a href="mailto:wiejskiepodworze@gmail.com">wiejskiepodworze@gmail.com</a>, albo pod numerem telefonu: <a href="tel:+48603078211">603078211</a></p>
+        <p>Zapraszamy także na naszego Facebooka <a href="https://www.facebook.com/wiejskiepodworze">Wiejskie Podwórze</a> i Instagrama <a href="https://www.instagram.com/wiejskiepodworze/">@wiejskiepodworze</a></p>
+    </section>
+
+    <h2>Galeria</h2>
+
+    <section id="fotos">
+        <img src="zdjecie1.jpg" alt="Responsive Image" class="responsive-img">
+        <img src="zdjecie2.jpg" alt="Responsive Image" class="responsive-img">
+        <img src="zdjecie3.jpg" alt="Responsive Image" class="responsive-img">
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Wiejskie Podwórze.</p>
+    </footer>
+</body>
+</html>
