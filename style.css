@@ -12,10 +12,10 @@ body {
     background-position: center center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
-    color: #2a832a; /* Dark gray text color */
+    color: #333; /* Dark gray text color */
 }
 header {
-    background-color: #333; /* Dark green header background */
+    background-color: #2a832a; /* Dark green header background */
     color: #fff;
     text-align: center;
     padding: 20px;
