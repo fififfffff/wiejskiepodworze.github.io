@@ -1,5 +1,5 @@
 /* Podstawowe style */
-body, h1, h2, p, ul, li, a {
+body, h1, p, ul, li, a {
     margin: 0;
     padding: 0;
 }
@@ -62,9 +62,10 @@ section {
 
 
 h2 {
+    border: 1 solid #000000;
     text-align: center;
     margin: 20px 0;
-    color: #000000; /* Dark green heading color */
+    color: rgb(0, 0, 0); /* Dark green heading color */
 }
 
 ul {
